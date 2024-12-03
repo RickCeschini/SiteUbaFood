@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UbaFood</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url('D:\Design\ubafood\Site Ubafood\Balanco-Ubatuba-e1643393329131.jpeg');
+            background-size: cover; /* Faz a imagem cobrir todo o fundo */
+            background-repeat: no-repeat; /* Evita que a imagem se repita */
+            background-position: center; /* Centraliza a imagem */
+        }
+
+        header {
+            background: rgb(255, 255, 255);
+            padding: 20px 0;
+            text-align: center;
+
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: #000000;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background: #fff;
+            border-radius: 5px;
+        }
+        
+        .cta {
+            background: #FF914D;
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+         .container {
+            display: flex;
+            align-items: center; 
+        }
+        .cta {
+            margin-left: 20px; 
+            padding: 10px 20px; 
+            background-color: #FF914D ; 
+            color: white; 
+            text-decoration: none; 
+            border-radius: 5px; 
+        }
+        .cta:hover {
+            background-color: #ff6600; 
+        }
+       
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+   
+<header> 
+
+     <img src= "D:\Design\ubafood\Site Ubafood\Banco de Imagens\320x89.png" width="420" height="109" alt="Descrição da imagem">>
+    <nav>
+        <a href="#Home">Home</a>
+        <a href="#Cadastro">Cadastro</a>
+        <a href="#Ubatuba News">Ubatuba News</a>
+        <a href="#Sobre">Sobre</a>
+    </nav>
+</header>
+
+<section id="Home" style="text-align: center; padding: 50px 20px; background-color: #ffffff; display: flex; flex-direction: column; align-items: center;">
+
+    <h2 style="font-size: 2.5em; color: #FF6F20; margin-bottom: 10px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); font-family: Arial, Helvetica, sans-serif, sans-serif;">
+        Bem-Vindo ao <span style="background: linear-gradient(to right, #FF6F20, #FF914D); -webkit-background-clip: text; color: transparent;">UbaFood</span>
+    </h2>
+    <p style="font-size: 1.2em; color: #FF8C42; margin-top: 0; letter-spacing: 1px;">
+        Baixe já e venha fazer parte desse grupo
+    </p>
+
+    <div style="display: flex; flex-direction: row; align-items: center; justify-content: center; width: 100%; max-width: 1200px; margin-top: 30px;">
+
+        <div style="flex: 1; display: flex; justify-content: center; align-items: center; margin-right: 20px;">
+            <img src="D:\Design\ubafood\Site Ubafood\Banco de Imagens\Ubafood_segurando-removebg-preview.png" alt="Imagem Principal" style="max-width: 100%; height: auto;">
+        </div>
+
+        <div style="flex: 1; display: flex; flex-direction: column; align-items: center;">
+            <a href="#" class="cta" style="margin-bottom: 10px; padding: 15px 60px; font-size: 18px; background-color: #FF914D; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: white; text-decoration: none; border-radius: 5px; width: 200px; text-align: center;"><b>Download</b></a>
+
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                <a href="https://play.google.com/store" target="_blank">
+                    <img src="D:\Design\ubafood\Site Ubafood\Banco de Imagens\googleplay.png" width="170" height="50" alt="Google Play" style="border-radius: 5px;">
+                </a>
+
+                <a href="https://www.apple.com/app-store/" target="_blank">
+                    <img src="D:\Design\ubafood\Site Ubafood\Banco de Imagens\AppStore.png" width="170" height="50" alt="App Store" style="border-radius: 5px;">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    @media (min-width: 768px) {
+        #Home {
+            flex-direction: column; 
+        }
+
+        #Home h2 {
+            font-size: 2.8em;
+        }
+
+        #Home p {
+            font-size: 1.5em;
+        }
+
+        .cta {
+            width: 250px; 
+        }
+    }
+
+    @media (max-width: 767px) {
+        .cta {
+            width: 80%; 
+        }
+    }
+</style>
+
+
+<section id="Cadastro" style="background-color: #fff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); max-width: 400px; margin: 50px auto; padding: 20px;">
+    <h2 style="text-align: center; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: #FF6F20;"><b>Cadastro</b></h2>
+    <form>
+        <div class="input-field" style="position: relative; margin-bottom: 20px;">
+            <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; border: 1px solid #ff7f50; border-radius: 4px; outline: none; transition: border-color 0.3s;">
+            <label for="name" style="position: absolute; top: 10px; left: 10px; color: #999; transition: 0.3s;">Nome</label>
+        </div>
+        
+        <div class="input-field" style="position: relative; margin-bottom: 20px;">
+            <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; border: 1px solid #ff7f50; border-radius: 4px; outline: none; transition: border-color 0.3s;">
+            <label for="email" style="position: absolute; top: 10px; left: 10px; color: #999; transition: 0.3s;">Email</label>
+        </div>
+        
+        <div class="input-field" style="position: relative; margin-bottom: 20px;">
+            <input type="password" id="password" name="password" required style="width: 100%; padding: 10px; border: 1px solid #ff7f50; border-radius: 4px; outline: none; transition: border-color 0.3s;">
+            <label for="password" style="position: absolute; top: 10px; left: 10px; color: #999; transition: 0.3s;">Senha</label>
+        </div>
+        
+        <div class="input-field" style="position: relative; margin-bottom: 20px;">
+            <input type="password" id="confirm_password" name="confirm_password" required style="width: 100%; padding: 10px; border: 1px solid #ff7f50; border-radius: 4px; outline: none; transition: border-color 0.3s;">
+            <label for="confirm_password" style="position: absolute; top: 10px; left: 10px; color: #999; transition: 0.3s;">Confirmar Senha</label>
+        </div>
+        
+        <div class="links" style="text-align: center; margin: 20px 0;">
+            <p style="margin: 0;">Já possui uma conta? <a href="" style="color: #ff7f50; text-decoration: none;">Faça login</a></p>
+        </div>
+
+        <div class="submit-button" style="display: flex; justify-content: space-between;">
+            <a href="https://192.168.1.191/ubafood282/public/auth/store-registration" class="cta" style="background-color: #ff7f50; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: white; padding: 10px 15px; border-radius: 4px; text-decoration: none; text-align: center; transition: background-color 0.3s;"><b>Food's</b></a>
+            <a href="https://192.168.1.191/ubafood282/public/auth/delivery-registration" class="cta" style="background-color: #ff7f50; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: white; padding: 10px 15px; border-radius: 4px; text-decoration: none; text-align: center; transition: background-color 0.3s;"><b>Entregador</b></a>
+        </div>
+    </form>
+</section>
+
+<section id="Sobre" style="display: flex; align-items: center;">
+    <img src="D:\Design\ubafood\Site Ubafood\Banco de Imagens\Tela_inicial_-removebg-preview.png" alt="UbaFood" style="max-width: 300px; margin-right: 20px;">
+
+    <div>
+        <h2 style="font-family: Arial, Helvetica, sans-serif;">Sobre</h2>
+        <h3 style="font-family: Arial, Helvetica, sans-serif;">O UbaFood | A Revolução das Entregas em Ubatuba!</h3>
+        <p style="font-family: Arial, Helvetica, sans-serif;">
+            Chegou o UbaFood, o aplicativo que vai transformar sua<br>
+            forma de pedir e receber tudo o que você precisa em<br>
+            Ubatuba! Seja aquela refeição deliciosa, compras de<br>
+            mercado ou algo urgente, o UbaFood conecta você aos<br>
+            melhores serviços de entrega da cidade de forma<br>
+            rápida, simples e eficiente.
+        </p>
+        
+        <h4 style="font-family: Arial, Helvetica, sans-serif;"><b>Por que escolher o UbaFood ?</b></h4>
+        <ul style="font-family: Arial, Helvetica, sans-serif;">
+            <li>✅ Entrega Express: Pedidos entregues em tempo recorde!</li>
+            <li>✅ Variedade de Opções: Restaurantes, mercados e muito mais ao alcance de um clique.</li>
+            <li>✅ Feito para Ubatuba: Serviços pensados para atender às necessidades locais com qualidade.</li>
+            <li>✅ Simples e Intuitivo: Escolha, peça e acompanhe seu pedido em tempo real.</li>
+        </ul>
+    </div>
+</section>
+
+<section id="Ubatuba News">
+    <h2 style="font-family: Arial, Helvetica, sans-serif;"><b>UbaFood News</b></h2>
+    <article>
+        <h3>UbaFood</h3>
+        <p>Confira nossa playlist de notícias sobre Ubatuba!</p>
+        <iframe width="560" height="315" src="https://youtube.com/embed?v=ryFuV5s8uO0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </article>
+</section>
+
+<section id="contact" style="padding: 40px; background-color: #f9f9f9; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); max-width: 600px; margin: auto;">
+    <h2 style="text-align: center; color: #333;">Contact Us</h2>
+    <p style="text-align: center; color: #666;">If you have any questions, feel free to reach out to us using the form below:</p>
+    
+    <form action="submit_form.php" method="post" style="display: flex; flex-direction: column; gap: 15px;">
+        <div>
+            <label for="name" style="font-weight: bold; color: #333;">Name:</label>
+            <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+        </div>
+        <div>
+            <label for="email" style="font-weight: bold; color: #333;">Email:</label>
+            <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+        </div>
+        <div>
+            <label for="subject" style="font-weight: bold; color: #333;">Subject:</label>
+            <input type="text" id="subject" name="subject" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+        </div>
+        <div>
+            <label for="message" style="font-weight: bold; color: #333;">Message:</label>
+            <textarea id="message" name="message" rows="4" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;"></textarea>
+        </div>
+        <div style="text-align: center;">
+            <button type="submit" style="background-color: #FF914D; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px;">Enviar</button>
+        </div>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 Solução Em. Todos os direitos reservados.</p>
+</footer>
+
+</body>
